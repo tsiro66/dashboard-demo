@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #f05a41;
+  --color-panel: #222222;
+  /* You can also define a custom gray for your background here */
+  --color-background: #1a1a1a;
+}
+
+/* Add this section below the theme block */
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: #ffffff; /* Explicitly set default text to white */
+    
+    /* Smooths out white text on dark backgrounds */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
