@@ -1,4 +1,4 @@
-import { pgTable, text, integer, timestamp, pgEnum, uuid, numeric } from 'drizzle-orm/pg-core';
+import { pgTable, text, integer, timestamp, pgEnum, uuid } from 'drizzle-orm/pg-core';
 
 export const statusEnum = pgEnum('status', ['pending', 'paid']);
 

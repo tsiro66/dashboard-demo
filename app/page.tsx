@@ -3,7 +3,7 @@ import { playfair_display } from "./ui/fonts";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-[#1a1a1a] p-6 text-white">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-background p-6 text-white">
       {/* Simplified Header/Logo Area */}
       <div className="mb-12">
         <h1 className={`${playfair_display.className} text-4xl md:text-5xl tracking-tight`}>
@@ -18,14 +18,14 @@ export default function Page() {
         >
           Welcome to my Next.js demo. <br />
           <span className="text-gray-400 text-lg md:text-xl mt-4 block font-sans italic">
-            Exploring <span className="text-[#f05a41]">Next.js Auth</span> and Drizzle ORM.
+            Exploring <span className="text-brand">Next.js Auth</span> and Drizzle ORM.
           </span>
         </p>
 
         <div className="flex flex-col items-center gap-4">
           <Link
             href="/login"
-            className="rounded-full bg-[#f05a41] px-10 py-3 text-sm font-medium transition-all hover:bg-[#d94e38] hover:scale-105"
+            className="rounded-full bg-brand px-10 py-3 text-sm font-medium transition-all hover:bg-brand/80 hover:scale-105"
           >
             Log in to Dashboard
           </Link>
