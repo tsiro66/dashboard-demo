@@ -24,13 +24,13 @@ export default function NavLinks() {
             className={clsx(
               'flex h-[48px] items-center justify-center gap-3 rounded-lg px-4 text-sm font-medium transition-all md:justify-start',
               {
-                'text-[#f05a41] bg-[#f05a41]/10': isActive,
-                'text-gray-400 hover:text-white hover:bg-[#222222]': !isActive,
+                'text-brand bg-brand/10': isActive,
+                'text-gray-400 hover:text-white hover:bg-panel': !isActive,
               },
              )}
           >
             {/* Optional: Add a small dot for active state if you want it even more minimal */}
-            {isActive && <div className="w-1 h-1 rounded-full bg-[#f05a41]" />}
+            {isActive && <div className="w-1 h-1 rounded-full bg-brand" />}
             <p className="md:block text-xs uppercase tracking-widest">{link.name}</p>
           </Link>
         );
